@@ -1,0 +1,268 @@
+* {
+  font-family: 'Fira Code', monospace;
+margin: 0;
+padding: 0;
+
+}
+
+
+
+.pp-up {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0; 
+
+}
+ 
+.pp-inner {
+  position: fixed;
+  top: 5%;
+  right: 32%; 
+  min-width: 400px;
+  max-width: 640px;
+  height: auto;
+  min-height: 70vh;
+  margin-top: calc(13vh);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #999;
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transform: translate(-1%, -0%);
+
+}
+
+
+.bloctabs {
+  display: flex;
+  max-height: 10vh;
+  flex-direction: row;
+
+  
+}
+ 
+.tabs {
+  padding: 30px;
+  text-align: center;
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  background: none;
+}
+.tabs:hover{
+  background-color: teal;
+}
+
+.active-tabs {
+ text-decoration: underline;
+ text-decoration-thickness:3px ;
+ text-decoration-color: teal ;
+
+}
+
+
+/* .active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(50% + 2px);
+  height: 5px;
+  background: rgba(0, 78, 100, 0.92); 
+}*/
+
+.carré-complet{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100%;
+}
+.tx{
+
+  max-height: 500px;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  margin: 4px;
+  overflow-x: hidden;
+  text-align:justify;
+
+   
+
+
+}
+.tx::-webkit-scrollbar {
+  display: none; 
+}
+
+
+ .inppp{
+  width: 100%;
+  flex: 70%;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+} 
+.inp2{
+
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 6vh;
+}
+.inp1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+ height: 6vh;
+ flex-direction: column;
+}
+
+
+
+
+.inp1 input{
+  width: 100%;
+  border-radius: 8px;
+  height: 50%;
+  border: 1px solid #203659;
+  box-shadow: 0px 0px 0px 4px rgba(75, 77, 237, 0.1);
+
+
+}
+.inp2 input{
+  width: 100%;
+  border-radius: 8px;
+  height: 50%;
+  border: 1px solid #203659;
+  box-shadow: 0px 0px 0px 4px rgba(75, 77, 237, 0.1);
+
+}
+
+.add{
+  width: 40%;
+  background-color: teal;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 3vh;
+  cursor: pointer;
+}
+
+.t{
+  position: sticky;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+}
+
+
+
+
+.apply{
+  width: 40%;
+  background-color: teal;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 3vh;
+  cursor: pointer;
+}
+
+
+.roling1{
+  flex:20%;
+
+
+}
+.r1_div,.r2_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.r1_div select{
+  height: 7vh;
+  width: 80%;
+  border-radius: 10px;
+}
+.r2_div select{
+  height: 3vh;
+  width: 80%;
+  border-radius: 10px;
+
+}
+.roling2{
+ flex: 20%; 
+}
+.input_vlan{
+ flex: 20%;
+ 
+
+}
+.btn_apply{
+  flex: 40%;
+}
+.input_vlan{
+   display: flex;
+   flex-direction: column;
+  }
+ 
+.input_vlan input{
+  width: 100%;
+  border-radius: 8px;
+  height: 3vh;
+  border: 1px solid #203659;
+  box-shadow: 0px 0px 0px 4px rgba(75, 77, 237, 0.1);
+}
+
+.btt{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.btn_apply{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.conf-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conf-input select{
+  width: 100%;
+  height: 3vh;
+  border-radius: 10px;
+}
+.conf-input button{
+  width:100%;
+}
+.conf-input label{
+  width: 40%
+}
